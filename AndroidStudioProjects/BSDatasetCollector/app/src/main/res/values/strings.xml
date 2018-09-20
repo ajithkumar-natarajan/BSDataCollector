@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BS Dataset Collector</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">V. Srinivasa Chakravarthy</string>
+    <string name="nav_header_subtitle">bharatiscript.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="mail_dataset">Mail dataset</string>
+    <string name="add">Add data</string>
+</resources>

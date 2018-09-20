@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Middle level">
+        <menu>
+            <item
+                android:id="@+id/mid_a"
+                android:icon="@drawable/ic_menu_a"
+                android:title="'a'" />
+            <item
+                android:id="@+id/mid_am"
+                android:icon="@drawable/ic_menu_am"
+                android:title="'am/an'" />
+            <item
+                android:id="@+id/mid_aha"
+                android:icon="@drawable/ic_menu_share"
+                android:title="'aha'" />
+            <item
+                android:id="@+id/mid_ka"
+                android:icon="@drawable/ic_menu_k"
+                android:title="'ka'" />
+            <item
+                android:id="@+id/mid_da"
+                android:icon="@drawable/ic_menu_nga"
+                android:title="'nga'" />
+            <item
+                android:id="@+id/mid_cha"
+                android:icon="@drawable/ic_menu_ch"
+                android:title="'cha'" />
+            <item
+                android:id="@+id/mid_nya"
+                android:icon="@drawable/ic_menu_ny"
+                android:title="'nya'" />
+            <item
+                android:id="@+id/mid_ta"
+                android:icon="@drawable/ic_menu_t"
+                android:title="'ta'" />
+            <item
+                android:id="@+id/mid_nae"
+                android:icon="@drawable/ic_menu_na"
+                android:title="'nae'" />
+            <item
+                android:id="@+id/mid_tha"
+                android:icon="@drawable/ic_menu_ta"
+                android:title="'tha'" />
+            <item
+                android:id="@+id/mid_na"
+                android:icon="@drawable/ic_menu_n__1_"
+                android:title="'am/na'" />
+            <item
+                android:id="@+id/mid_pa"
+                android:icon="@drawable/ic_menu_p"
+                android:title="'pa'" />
+            <item
+                android:id="@+id/mid_ma"
+                android:icon="@drawable/ic_menu_m"
+                android:title="'ma'" />
+            <item
+                android:id="@+id/mid_ya"
+                android:icon="@drawable/ic_menu_ya"
+                android:title="'ya'" />
+            <item
+                android:id="@+id/mid_ra"
+                android:icon="@drawable/ic_menu_ra"
+                android:title="'ra'" />
+            <item
+                android:id="@+id/mid_la"
+                android:icon="@drawable/ic_menu_la"
+                android:title="'la'" />
+            <item
+                android:id="@+id/mid_va"
+                android:icon="@drawable/ic_menu_va"
+                android:title="'va'" />
+            <item
+                android:id="@+id/mid_sa"
+                android:icon="@drawable/ic_menu_sa"
+                android:title="'sa'" />
+            <item
+                android:id="@+id/mid_ha"
+                android:icon="@drawable/ic_menu_ha"
+                android:title="'ha'" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Upper level">
+            <menu>
+                <item
+                    android:id="@+id/up_aa"
+                    android:icon="@drawable/ic_menu_a_matra"
+                    android:title="'aa mathra'" />
+                <item
+                    android:id="@+id/up_i"
+                    android:icon="@drawable/ic_menu_i_matra"
+                    android:title="'i mathra'" />
+                <item
+                    android:id="@+id/up_ii"
+                    android:icon="@drawable/ic_menu_ii_matra"
+                    android:title="'ii mathra'" />
+                <item
+                    android:id="@+id/up_u"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="'u mathra'" />
+                <item
+                    android:id="@+id/up_uu"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="'uu mathra'" />
+                <item
+                    android:id="@+id/up_ru"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="'ru mathra'" />
+                <item
+                    android:id="@+id/up_ae"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="'ae mathra'" />
+                <item
+                    android:id="@+id/up_ai"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="'ai mathra'" />
+                <item
+                    android:id="@+id/up_o"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="'o mathra'" />
+                <item
+                    android:id="@+id/up_ou"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="'ou mathra'" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Lower level">
+        <menu>
+            <item
+                android:id="@+id/low_asp"
+                android:icon="@drawable/ic_menu_aspiration"
+                android:title="'aspiration'" />
+            <item
+                android:id="@+id/voi"
+                android:icon="@drawable/ic_menu_voicing"
+                android:title="'voicing'" />
+            <item
+                android:id="@+id/low_aspvoi"
+                android:icon="@drawable/ic_menu_aspiration_and_voicing"
+                android:title="'aspiration and voicing'" />
+            <item
+                android:id="@+id/low_sin"
+                android:icon="@drawable/ic_menu_single_line"
+                android:title="'single line'" />
+            <item
+                android:id="@+id/low_dou"
+                android:icon="@drawable/ic_menu_double_line"
+                android:title="'double line'" />
+        </menu>
+    </item>
+
+</menu>
