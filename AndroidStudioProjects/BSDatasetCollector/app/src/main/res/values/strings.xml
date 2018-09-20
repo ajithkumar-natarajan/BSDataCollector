@@ -5,7 +5,7 @@
     <string name="nav_header_title">V. Srinivasa Chakravarthy</string>
     <string name="nav_header_subtitle">bharatiscript.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_send_mail">Send dataset</string>
     <string name="mail_dataset">Mail dataset</string>
     <string name="add">Add data</string>
 </resources>

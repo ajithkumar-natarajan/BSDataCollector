@@ -15,7 +15,7 @@
                 android:title="'am/an'" />
             <item
                 android:id="@+id/mid_aha"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_menu_aha"
                 android:title="'aha'" />
             <item
                 android:id="@+id/mid_ka"
@@ -101,31 +101,31 @@
                     android:title="'ii mathra'" />
                 <item
                     android:id="@+id/up_u"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_u_matra"
                     android:title="'u mathra'" />
                 <item
                     android:id="@+id/up_uu"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_uu_matra"
                     android:title="'uu mathra'" />
                 <item
                     android:id="@+id/up_ru"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_ri_matra"
                     android:title="'ru mathra'" />
                 <item
                     android:id="@+id/up_ae"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_e_matra"
                     android:title="'ae mathra'" />
                 <item
                     android:id="@+id/up_ai"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_oi_matra"
                     android:title="'ai mathra'" />
                 <item
                     android:id="@+id/up_o"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_o_matra"
                     android:title="'o mathra'" />
                 <item
                     android:id="@+id/up_ou"
-                    android:icon="@drawable/ic_menu_share"
+                    android:icon="@drawable/ic_menu_ou_matra"
                     android:title="'ou mathra'" />
             </menu>
         </item>

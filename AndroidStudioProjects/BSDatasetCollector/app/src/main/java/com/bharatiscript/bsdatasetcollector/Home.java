@@ -3,6 +3,7 @@ package com.bharatiscript.bsdatasetcollector;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 //import com.bharatiscript.bsdatasetcollector.R;
 
@@ -31,28 +33,28 @@ public class Home extends AppCompatActivity
         setSupportActionBar(toolbar);
 
 
-        fabSettings = (FloatingActionButton) this.findViewById(R.id.fabSetting);
-
-        layoutFabAdd = (LinearLayout) this.findViewById(R.id.layoutFabAdd);
-        layoutFabMail = (LinearLayout) this.findViewById(R.id.layoutFabMail);
-        //layoutFabSettings = (LinearLayout) this.findViewById(R.id.layoutFabSettings);
-
-        //When main Fab (Settings) is clicked, it expands if not expanded already.
-        //Collapses if main FAB was open already.
-        //This gives FAB (Settings) open/close behavior
-        fabSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (fabExpanded == true){
-                    closeSubMenusFab();
-                } else {
-                    openSubMenusFab();
-                }
-            }
-        });
-
-        //Only main FAB is visible in the beginning
-        closeSubMenusFab();
+//        fabSettings = (FloatingActionButton) this.findViewById(R.id.fabSetting);
+//
+//        layoutFabAdd = (LinearLayout) this.findViewById(R.id.layoutFabAdd);
+//        layoutFabMail = (LinearLayout) this.findViewById(R.id.layoutFabMail);
+//        //layoutFabSettings = (LinearLayout) this.findViewById(R.id.layoutFabSettings);
+//
+//        //When main Fab (Settings) is clicked, it expands if not expanded already.
+//        //Collapses if main FAB was open already.
+//        //This gives FAB (Settings) open/close behavior
+//        fabSettings.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (fabExpanded == true){
+//                    closeSubMenusFab();
+//                } else {
+//                    openSubMenusFab();
+//                }
+//            }
+//        });
+//
+//        //Only main FAB is visible in the beginning
+//        closeSubMenusFab();
 
         //    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +65,24 @@ public class Home extends AppCompatActivity
 //        }
 //    });
 //
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fabAdd);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Please go ahead and draw", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
+//        Toast emailToast = new Toast(this);
+//        emailToast.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getBaseContext(), "Zipping data to mail",
+//                        Toast.LENGTH_LONG).show();
+//            }
+//        });
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -73,22 +93,22 @@ public class Home extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    //closes FAB submenus
-    private void closeSubMenusFab(){
-        layoutFabAdd.setVisibility(View.INVISIBLE);
-        layoutFabMail.setVisibility(View.INVISIBLE);
-        fabSettings.setImageResource(R.drawable.ic_expand_less_black_24dp);
-        fabExpanded = false;
-    }
-
-    //Opens FAB submenus
-    private void openSubMenusFab(){
-        layoutFabAdd.setVisibility(View.VISIBLE);
-        layoutFabMail.setVisibility(View.VISIBLE);
-        //Change settings icon to 'X' icon
-        fabSettings.setImageResource(R.drawable.ic_close_black_24dp);
-        fabExpanded = true;
-    }
+//    //closes FAB submenus
+//    private void closeSubMenusFab(){
+//        layoutFabAdd.setVisibility(View.INVISIBLE);
+//        layoutFabMail.setVisibility(View.INVISIBLE);
+//        fabSettings.setImageResource(R.drawable.ic_expand_less_black_24dp);
+//        fabExpanded = false;
+//    }
+//
+//    //Opens FAB submenus
+//    private void openSubMenusFab(){
+//        layoutFabAdd.setVisibility(View.VISIBLE);
+//        layoutFabMail.setVisibility(View.VISIBLE);
+//        //Change settings icon to 'X' icon
+//        fabSettings.setImageResource(R.drawable.ic_close_black_24dp);
+//        fabExpanded = true;
+//    }
 
     @Override
     public void onBackPressed() {
@@ -115,7 +135,9 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_send_mail) {
+            Toast.makeText(getBaseContext(), "Zipping data to mail",
+                    Toast.LENGTH_LONG).show();
             return true;
         }
 
