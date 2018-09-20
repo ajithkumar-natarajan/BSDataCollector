@@ -29,8 +29,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_menu_a" />
-                            <entry key="sourceFile" value="$USER_HOME$/BharatiScript/DatasetCollector_App/CharacterIcons/a.svg" />
+                            <entry key="outputName" value="ic_clear_black_512x512" />
+                            <entry key="sourceFile" value="$USER_HOME$/Downloads/ic_clear_black_512x512.svg" />
                           </map>
                         </option>
                       </PersistentState>

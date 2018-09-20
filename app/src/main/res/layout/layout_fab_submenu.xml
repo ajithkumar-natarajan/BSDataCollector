@@ -12,92 +12,92 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical">
 
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layoutFabAdd"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginBottom="120dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+            <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
+            <!--app:cardElevation="@dimen/cardElevation"-->
+            <!--app:cardUseCompatPadding="true" >-->
+            <!--<TextView-->
+                <!--android:id="@+id/cvtAdd"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/add"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textStyle="bold"-->
+                <!--android:paddingRight="@dimen/cardview_horizontal_padding"-->
+                <!--android:paddingLeft="@dimen/cardview_horizontal_padding"-->
+                <!--android:paddingBottom="@dimen/cardview_vertical_padding"-->
+                <!--android:paddingTop="@dimen/cardview_vertical_padding" />-->
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fabAdd"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_note_add_black_24dp"-->
+            <!--app:backgroundTint="@android:color/holo_orange_dark"-->
+            <!--app:fabSize="mini" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layoutFabMail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginBottom="170dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+            <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
+            <!--app:cardElevation="@dimen/cardElevation"-->
+            <!--app:cardUseCompatPadding="true" >-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/cvtMail"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/mail_dataset"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textStyle="bold"-->
+                <!--android:paddingRight="@dimen/cardview_horizontal_padding"-->
+                <!--android:paddingLeft="@dimen/cardview_horizontal_padding"-->
+                <!--android:paddingBottom="@dimen/cardview_vertical_padding"-->
+                <!--android:paddingTop="@dimen/cardview_vertical_padding" />-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fabMail"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@android:drawable/ic_dialog_email"-->
+            <!--app:backgroundTint="@android:color/holo_orange_dark"-->
+            <!--app:fabSize="mini" />-->
+
+    <!--</LinearLayout>-->
+
     <LinearLayout
-        android:id="@+id/layoutFabAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="120dp"
-        android:layout_marginEnd="8dp"
-        android:orientation="horizontal">
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/cardview_light_background"
-            app:cardCornerRadius="@dimen/cardCornerRadius"
-            app:cardElevation="@dimen/cardElevation"
-            app:cardUseCompatPadding="true" >
-            <TextView
-                android:id="@+id/cvtAdd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/add"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textStyle="bold"
-                android:paddingRight="@dimen/cardview_horizontal_padding"
-                android:paddingLeft="@dimen/cardview_horizontal_padding"
-                android:paddingBottom="@dimen/cardview_vertical_padding"
-                android:paddingTop="@dimen/cardview_vertical_padding" />
-        </android.support.v7.widget.CardView>
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fabAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_note_add_black_24dp"
-            app:backgroundTint="@android:color/holo_orange_dark"
-            app:fabSize="mini" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layoutFabMail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_gravity="bottom|end"
-        android:layout_marginRight="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="170dp"
-        android:orientation="horizontal">
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/cardview_light_background"
-            app:cardCornerRadius="@dimen/cardCornerRadius"
-            app:cardElevation="@dimen/cardElevation"
-            app:cardUseCompatPadding="true" >
-
-            <TextView
-                android:id="@+id/cvtMail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/mail_dataset"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textStyle="bold"
-                android:paddingRight="@dimen/cardview_horizontal_padding"
-                android:paddingLeft="@dimen/cardview_horizontal_padding"
-                android:paddingBottom="@dimen/cardview_vertical_padding"
-                android:paddingTop="@dimen/cardview_vertical_padding" />
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fabMail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_dialog_email"
-            app:backgroundTint="@android:color/holo_orange_dark"
-            app:fabSize="mini" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layoutFabSettings"
+        android:id="@+id/layoutFabAddPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -106,12 +106,12 @@
         android:orientation="horizontal">
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fabSetting"
+            android:id="@+id/fabAddPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:src="@drawable/ic_expand_less_black_24dp"
-            app:backgroundTint="?attr/colorPrimary"
+            android:src="@drawable/ic_note_add_black_24dp"
+            app:backgroundTint="?attr/colorAccent"
             app:fabSize="normal" />
 
     </LinearLayout>
