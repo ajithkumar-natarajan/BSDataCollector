@@ -6,9 +6,11 @@ public class FingerPath {
 
     public int color;
     public Path path;
+    public int strokeWidth;
 
-    public FingerPath(int color, boolean emboss, boolean blur, int strokeWidth, Path path) {
+    public FingerPath(int color, int strokeWidth, Path path) {
         this.color = color;
+        this.strokeWidth = strokeWidth;
         this.path = path;
     }
 }

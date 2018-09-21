@@ -1,5 +1,6 @@
 package com.bharatiscript.bsdatasetcollector;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -12,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.ImageSpan;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,6 +28,7 @@ public class Home extends AppCompatActivity
 //    private FloatingActionButton fabSettings;
 //    private LinearLayout layoutFabAdd;
 //    private LinearLayout layoutFabMail;
+private static final String LOG_TAG = Home.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +76,9 @@ public class Home extends AppCompatActivity
             public void onClick(View view) {
                 Snackbar.make(view, "Inserted new page", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                Log.d(LOG_TAG, "Button clicked!");
+                Intent intent = new Intent(Home.this, WriteActivity.class);
+                startActivity(intent);
             }
         });
 

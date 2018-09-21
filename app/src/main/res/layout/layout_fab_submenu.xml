@@ -112,7 +112,8 @@
             android:layout_gravity="bottom|end"
             android:src="@drawable/ic_note_add_black_24dp"
             app:backgroundTint="?attr/colorAccent"
-            app:fabSize="normal" />
+            app:fabSize="normal"
+            android:onClick="Add data"/>
 
     </LinearLayout>
     <!--android:src="@drawable/ic_close_black_24dp"-->
