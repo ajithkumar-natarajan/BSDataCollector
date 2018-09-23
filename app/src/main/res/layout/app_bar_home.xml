@@ -22,7 +22,8 @@
 
     <include layout="@layout/content_home" />
 
-    <include layout="@layout/layout_fab_submenu"/>
+    <!--<include layout="@layout/layout_fab_submenu"/>-->
+    <include layout="@layout/home_screen_buttons"/>
 
     <!--<android.support.design.widget.FloatingActionButton-->
         <!--android:id="@+id/fab"-->

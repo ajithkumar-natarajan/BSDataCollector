@@ -1,120 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fabFrame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_marginTop="@dimen/fab_margin"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <!--<LinearLayout-->
-        <!--android:id="@+id/layoutFabAdd"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:gravity="center_vertical"-->
-        <!--android:layout_gravity="bottom|end"-->
-        <!--android:layout_marginRight="8dp"-->
-        <!--android:layout_marginBottom="120dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:orientation="horizontal">-->
+    <!--android:id="@+id/layoutFabAdd"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:layout_marginBottom="120dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:orientation="horizontal">-->
 
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--app:cardBackgroundColor="@color/cardview_light_background"-->
-            <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
-            <!--app:cardElevation="@dimen/cardElevation"-->
-            <!--app:cardUseCompatPadding="true" >-->
-            <!--<TextView-->
-                <!--android:id="@+id/cvtAdd"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/add"-->
-                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
-                <!--android:textStyle="bold"-->
-                <!--android:paddingRight="@dimen/cardview_horizontal_padding"-->
-                <!--android:paddingLeft="@dimen/cardview_horizontal_padding"-->
-                <!--android:paddingBottom="@dimen/cardview_vertical_padding"-->
-                <!--android:paddingTop="@dimen/cardview_vertical_padding" />-->
-        <!--</android.support.v7.widget.CardView>-->
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+    <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
+    <!--app:cardElevation="@dimen/cardElevation"-->
+    <!--app:cardUseCompatPadding="true" >-->
+    <!--<TextView-->
+    <!--android:id="@+id/cvtAdd"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/add"-->
+    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--android:textStyle="bold"-->
+    <!--android:paddingRight="@dimen/cardview_horizontal_padding"-->
+    <!--android:paddingLeft="@dimen/cardview_horizontal_padding"-->
+    <!--android:paddingBottom="@dimen/cardview_vertical_padding"-->
+    <!--android:paddingTop="@dimen/cardview_vertical_padding" />-->
+    <!--</android.support.v7.widget.CardView>-->
 
-        <!--<android.support.design.widget.FloatingActionButton-->
-            <!--android:id="@+id/fabAdd"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:src="@drawable/ic_note_add_black_24dp"-->
-            <!--app:backgroundTint="@android:color/holo_orange_dark"-->
-            <!--app:fabSize="mini" />-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fabAdd"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_note_add_black_24dp"-->
+    <!--app:backgroundTint="@android:color/holo_orange_dark"-->
+    <!--app:fabSize="mini" />-->
 
     <!--</LinearLayout>-->
 
     <!--<LinearLayout-->
-        <!--android:id="@+id/layoutFabMail"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:gravity="center_vertical"-->
-        <!--android:layout_gravity="bottom|end"-->
-        <!--android:layout_marginRight="8dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginBottom="170dp"-->
-        <!--android:orientation="horizontal">-->
+    <!--android:id="@+id/layoutFabMail"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="170dp"-->
+    <!--android:orientation="horizontal">-->
 
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--app:cardBackgroundColor="@color/cardview_light_background"-->
-            <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
-            <!--app:cardElevation="@dimen/cardElevation"-->
-            <!--app:cardUseCompatPadding="true" >-->
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+    <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
+    <!--app:cardElevation="@dimen/cardElevation"-->
+    <!--app:cardUseCompatPadding="true" >-->
 
-            <!--<TextView-->
-                <!--android:id="@+id/cvtMail"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/mail_dataset"-->
-                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
-                <!--android:textStyle="bold"-->
-                <!--android:paddingRight="@dimen/cardview_horizontal_padding"-->
-                <!--android:paddingLeft="@dimen/cardview_horizontal_padding"-->
-                <!--android:paddingBottom="@dimen/cardview_vertical_padding"-->
-                <!--android:paddingTop="@dimen/cardview_vertical_padding" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/cvtMail"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/mail_dataset"-->
+    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+    <!--android:textStyle="bold"-->
+    <!--android:paddingRight="@dimen/cardview_horizontal_padding"-->
+    <!--android:paddingLeft="@dimen/cardview_horizontal_padding"-->
+    <!--android:paddingBottom="@dimen/cardview_vertical_padding"-->
+    <!--android:paddingTop="@dimen/cardview_vertical_padding" />-->
 
-        <!--</android.support.v7.widget.CardView>-->
+    <!--</android.support.v7.widget.CardView>-->
 
-        <!--<android.support.design.widget.FloatingActionButton-->
-            <!--android:id="@+id/fabMail"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:src="@android:drawable/ic_dialog_email"-->
-            <!--app:backgroundTint="@android:color/holo_orange_dark"-->
-            <!--app:fabSize="mini" />-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fabMail"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@android:drawable/ic_dialog_email"-->
+    <!--app:backgroundTint="@android:color/holo_orange_dark"-->
+    <!--app:fabSize="mini" />-->
 
     <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+
 
     <LinearLayout
-        android:id="@+id/layoutFabAddPage"
+        android:id="@+id/layoutAddPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
         android:orientation="horizontal">
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+        <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
+        <!--app:cardElevation="@dimen/cardElevation"-->
+        <!--app:cardUseCompatPadding="true" >-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/cvtMail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/mail_dataset"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:textStyle="normal" />-->
+
+        <!--</android.support.v7.widget.CardView>-->
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fabAddPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
             android:src="@drawable/ic_note_add_black_24dp"
-            app:backgroundTint="?attr/colorAccent"
-            app:fabSize="normal"
-            android:onClick="Add data"/>
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal" />
 
     </LinearLayout>
+
+
+    <!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/layoutFabAddPage"-->
+    <!--android:layout_width="153dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|end"-->
+    <!--android:layout_marginBottom="50dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+    <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
+    <!--app:cardElevation="@dimen/cardElevation"-->
+    <!--app:cardUseCompatPadding="true">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/cvtAddPage"-->
+    <!--android:layout_width="133dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:paddingBottom="@dimen/cardview_vertical_padding"-->
+    <!--android:paddingLeft="@dimen/cardview_horizontal_padding"-->
+    <!--android:paddingRight="@dimen/cardview_horizontal_padding"-->
+    <!--android:paddingTop="@dimen/cardview_vertical_padding"-->
+    <!--android:text="@string/add"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:textStyle="normal" />-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fabAddPage"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom|center_horizontal"-->
+    <!--android:onClick="Add_data"-->
+    <!--android:src="@drawable/ic_note_add_black_24dp"-->
+    <!--app:backgroundTint="?attr/colorAccent"-->
+    <!--app:fabSize="normal" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+    <!--</LinearLayout>-->
     <!--android:src="@drawable/ic_close_black_24dp"-->
 </FrameLayout>
+
+<!--<android.support.design.widget.CoordinatorLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<LinearLayout android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/viewA"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1.6"-->
+            <!--android:orientation="horizontal" />-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/viewB"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.2"-->
+            <!--android:orientation="horizontal"/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/cardView"-->
+        <!--android:layout_width="125dp"-->
+        <!--android:layout_height="59dp"-->
+        <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+        <!--app:cardCornerRadius="@dimen/cardCornerRadius"-->
+        <!--app:cardElevation="@dimen/cardElevation"-->
+        <!--app:cardUseCompatPadding="true"-->
+        <!--app:layout_anchor="@+id/fab"-->
+        <!--app:layout_anchorGravity="right|center"-->
+        <!--android:paddingLeft="@dimen/fab_margin"-->
+        <!--android:layout_marginLeft="220dp"-->
+        <!--tools:paddingLeft="@dimen/activity_horizontal_margin">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/cvtAddPage"-->
+            <!--android:layout_width="133dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:paddingBottom="@dimen/cardview_vertical_padding"-->
+            <!--android:paddingLeft="@dimen/fab_margin"-->
+            <!--android:paddingRight="@dimen/cardview_horizontal_padding"-->
+            <!--android:paddingTop="@dimen/cardview_vertical_padding"-->
+            <!--android:text="@string/add"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:textStyle="normal" />-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fabAddPage"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:clickable="true"-->
+        <!--android:src="@drawable/ic_new_paint_512x512"-->
+        <!--app:layout_anchor="@id/viewAddPage"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:layout_anchorGravity="bottom|center"-->
+        <!--android:layout_centerInParent="true" />-->
+<!--</android.support.design.widget.CoordinatorLayout>-->

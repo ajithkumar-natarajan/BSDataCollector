@@ -6,11 +6,18 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.media.MediaScannerConnection;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class PaintView extends View {
@@ -29,6 +36,8 @@ public class PaintView extends View {
     private Bitmap mBitmap;
     private Canvas mCanvas;
     private Paint mBitmapPaint = new Paint(Paint.DITHER_FLAG);
+
+    private ArrayList<String> touchPoints = new ArrayList<>();
 
     public PaintView(Context context) {
         this(context, null);
@@ -61,6 +70,7 @@ public class PaintView extends View {
 
     public void clear() {
         backgroundColor = DEFAULT_BG_COLOR;
+        touchPoints = new ArrayList<>();
         paths.clear();
         invalidate();
     }
@@ -102,11 +112,14 @@ public class PaintView extends View {
             mPath.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2);
             mX = x;
             mY = y;
+
+            touchPoints.add("q" + mX + "," + mY + ";");
         }
     }
 
     private void touchUp() {
         mPath.lineTo(mX, mY);
+        touchPoints.add("l" + mX + "," + mY + ";");
     }
 
     @Override
@@ -128,6 +141,51 @@ public class PaintView extends View {
                 invalidate();
                 break;
         }
+
+        return true;
+    }
+
+    public boolean saveTouchPoints(Context context, String filepath){
+        if(touchPoints.isEmpty()){
+            return false;
+        }
+        File writeFile = new File(context.getExternalFilesDir(null), filepath);
+        try {
+            // Creates a file in the primary external storage space of the
+            // current application.
+            // If the file does not exists, it is created.
+            writeFile = new File(context.getExternalFilesDir(null), filepath);
+            if (!writeFile.exists())
+                writeFile.createNewFile();
+            // Adds a line to the trace file
+            BufferedWriter writer = new BufferedWriter(new FileWriter(writeFile, true /*append*/));
+            for (String point : touchPoints) {
+                writer.write(point);
+                writer.newLine();
+            }
+            writer.close();
+            // Refresh the data so it can seen when the device is plugged in a
+            // computer. You may have to unplug and replug the device to see the
+            // latest changes. This is not necessary if the user should not modify
+            // the files.
+            MediaScannerConnection.scanFile(context,
+                    new String[]{writeFile.toString()},
+                    null,
+                    null);
+        } catch (IOException e) {
+            Log.e("ReadWriteFile", "Unable to write to the TestFile.txt file.");
+        }
+        Log.v("ReadWriteFile", "Write to TestFile.txt file.");
+
+        String[] segments = writeFile.getPath().split("/");
+        String lastPathComponent = segments[segments.length - 1];
+
+        String[] splitPath = lastPathComponent.split("\\.");
+
+        Toast.makeText(context, "Data collected for this character: "+splitPath[0],
+                Toast.LENGTH_LONG).show();
+
+        clear();
 
         return true;
     }

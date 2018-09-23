@@ -22,7 +22,7 @@
                 android:icon="@drawable/ic_menu_k"
                 android:title="'ka'" />
             <item
-                android:id="@+id/mid_da"
+                android:id="@+id/mid_nga"
                 android:icon="@drawable/ic_menu_nga"
                 android:title="'nga'" />
             <item
@@ -138,7 +138,7 @@
                 android:icon="@drawable/ic_menu_aspiration"
                 android:title="'aspiration'" />
             <item
-                android:id="@+id/voi"
+                android:id="@+id/low_voi"
                 android:icon="@drawable/ic_menu_voicing"
                 android:title="'voicing'" />
             <item

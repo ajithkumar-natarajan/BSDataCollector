@@ -5,4 +5,11 @@
     <!-- <color name="colorPrimaryDark">#303F9F</color> -->
     <color name="colorPrimaryDark">#00695C</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimaryProfile">#5bbc59</color>
+    <color name="colorPrimaryDarkProfile">#248e50</color>
+    <color name="colorAccentProfile">#bf40ff</color>
+    <color name="colorWhiteProfile">#FFFFFF</color>
+    <color name="colourButton">#cceae7</color>
+
 </resources>

@@ -9,4 +9,6 @@
     <string name="add">Add data</string>
     <string name="action_reset">Clear</string>
     <string name="paint_activity">Draw character</string>
+    <string name="character_selection_desc">Use navigation drawer to choose character</string>
+    <string name="bharati_project"><a href="http://www.bharatiscript.com">Bharati project</a></string>
 </resources>

@@ -12,5 +12,7 @@ public class FingerPath {
         this.color = color;
         this.strokeWidth = strokeWidth;
         this.path = path;
+
+
     }
 }
