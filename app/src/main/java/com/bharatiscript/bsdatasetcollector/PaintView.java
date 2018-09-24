@@ -113,7 +113,7 @@ public class PaintView extends View {
             mX = x;
             mY = y;
 
-            touchPoints.add("q" + mX + "," + mY + ";");
+            touchPoints.add("q" + x + "," + y + ";");
         }
     }
 
